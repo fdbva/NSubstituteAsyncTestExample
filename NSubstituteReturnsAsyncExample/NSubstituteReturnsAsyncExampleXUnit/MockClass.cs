@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace NSubstituteReturnsAsyncExampleXUnit
 {
-    public class MockClass
+    public class MockClass : IMockClass
     {
         public async Task<IEnumerable<int>> MockMethodAsync()
         {

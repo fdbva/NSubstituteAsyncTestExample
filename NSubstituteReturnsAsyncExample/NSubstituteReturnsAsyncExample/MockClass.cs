@@ -7,7 +7,7 @@ namespace NSubstituteReturnsAsyncExample
     {
         public class MockClass
         {
-            public async Task<IEnumerable<int>> MockMethodAsync()
+            public virtual async Task<IEnumerable<int>> MockMethodAsync()
             {
                 await Task.Delay(1);
                 return new List<int> { 0 };

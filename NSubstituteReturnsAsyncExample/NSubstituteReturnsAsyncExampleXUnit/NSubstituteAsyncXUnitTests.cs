@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,12 +8,11 @@ namespace NSubstituteReturnsAsyncExampleXUnit
 {
     public class NSubstituteAsyncXUnitTests
     {
-
         [Fact]
         public async Task NSubstitute_AsyncReturns()
         {
             //Arrange
-            var mockClassSubstitute = Substitute.For<MockClass>();
+            var mockClassSubstitute = Substitute.For<IMockClass>();
             var methodReturn = new List<int> { 1 };
             mockClassSubstitute.MockMethodAsync().Returns(methodReturn);
 
@@ -29,7 +27,7 @@ namespace NSubstituteReturnsAsyncExampleXUnit
         public async Task NSubstitute_AsyncReturnsTask()
         {
             //Arrange
-            var mockClassSubstitute = Substitute.For<MockClass>();
+            var mockClassSubstitute = Substitute.For<IMockClass>();
             var methodReturn = new List<int> { 1 };
             var taskReturn = Task.FromResult(methodReturn.AsEnumerable());
             mockClassSubstitute.MockMethodAsync().Returns(taskReturn);
@@ -45,7 +43,7 @@ namespace NSubstituteReturnsAsyncExampleXUnit
         public async Task NSubstitute_AsyncReturnsLambda()
         {
             //Arrange
-            var mockClassSubstitute = Substitute.For<MockClass>();
+            var mockClassSubstitute = Substitute.For<IMockClass>();
             var methodReturn = new List<int> { 1 };
             mockClassSubstitute.MockMethodAsync().Returns(x => methodReturn);
 
@@ -60,7 +58,7 @@ namespace NSubstituteReturnsAsyncExampleXUnit
         public async Task NSubstitute_AsyncReturnsTaskLambda()
         {
             //Arrange
-            var mockClassSubstitute = Substitute.For<MockClass>();
+            var mockClassSubstitute = Substitute.For<IMockClass>();
             var methodReturn = new List<int> { 1 };
             var taskReturn = Task.FromResult(methodReturn.AsEnumerable());
             mockClassSubstitute.MockMethodAsync().Returns(x => taskReturn);
@@ -76,7 +74,7 @@ namespace NSubstituteReturnsAsyncExampleXUnit
         public async Task NSubstitute_AsyncReturnsAsyncTaskLambda()
         {
             //Arrange
-            var mockClassSubstitute = Substitute.For<MockClass>();
+            var mockClassSubstitute = Substitute.For<IMockClass>();
             var methodReturn = new List<int> { 1 };
             var taskReturn = Task.FromResult(methodReturn.AsEnumerable());
             mockClassSubstitute.MockMethodAsync().Returns(async x => await taskReturn);

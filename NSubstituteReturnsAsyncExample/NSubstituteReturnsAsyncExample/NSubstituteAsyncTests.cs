@@ -9,7 +9,6 @@ namespace NSubstituteReturnsAsyncExample
     [TestClass]
     public partial class NSubstituteAsyncTests
     {
-
         [TestMethod]
         public async Task NSubstitute_AsyncReturns()
         {
