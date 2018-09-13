@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSubstituteReturnsAsyncExample", "NSubstituteReturnsAsyncExample\NSubstituteReturnsAsyncExample.csproj", "{A9FE9501-B42A-49FA-9333-810923F4D8DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSubstituteReturnsAsyncExampleXUnit", "NSubstituteReturnsAsyncExampleXUnit\NSubstituteReturnsAsyncExampleXUnit.csproj", "{9696AE76-CA60-484E-A8AA-3B5AAEFA6C3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9FE9501-B42A-49FA-9333-810923F4D8DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9FE9501-B42A-49FA-9333-810923F4D8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9FE9501-B42A-49FA-9333-810923F4D8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9FE9501-B42A-49FA-9333-810923F4D8DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9696AE76-CA60-484E-A8AA-3B5AAEFA6C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9696AE76-CA60-484E-A8AA-3B5AAEFA6C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9696AE76-CA60-484E-A8AA-3B5AAEFA6C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9696AE76-CA60-484E-A8AA-3B5AAEFA6C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F0C9FFC-7674-405C-BA68-CBC27CB4999A}
+	EndGlobalSection
+EndGlobal
